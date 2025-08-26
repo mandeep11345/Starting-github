@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Defence Forces Website</title>
+    <script src="Sample2.js"></script>
+        <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f4f6f9;
+            color:#333;
+        }
+        header{
+            background:#34597f;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        nav{
+            background:#2e4053;
+            display:flex;
+            justify-content:center;
+            padding:10px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+        nav a:hover{color:#f1c40f;}
+
+        .hero{
+            text-align:center;
+            padding:70px;
+            color:black;
+        }
+        .hero h1{font-size:48px;}
+        .hero button{
+            padding:10px;
+            background:#f39c12;
+            border:none;
+            color:white;
+            border-radius:6px;
+            cursor:pointer;
+        }
+        .hero button:hover{background:#e67e22;}
+
+        .facilities{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+            margin:20px;
+        }
+        .card{
+            background:#d5dbdb;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+        }
+        .card:hover{transform:scale(1.05);}
+
+        .lists{
+            display:flex;
+            justify-content:space-evenly;
+            margin:30px 0;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+        th{background:#1b2631;color:white;}
+
+        form{
+            background:white;
+            padding:20px;
+            margin-top:20px;
+            border-radius:10px;
+        }
+        form label{
+            display:block;
+            margin:10px 0 5px;
+        }
+        form input,form select,form textarea{
+            width:100%;
+            padding:10px;
+            margin-bottom:10px;
+            border-radius:5px;
+            border:1px solid #aaa;
+        }
+        form button{
+            background:#117a65;
+            color:white;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            width:100%;
+        }
+        form button:hover{background:#0e6655;}
+
+        aside{
+            background:#aed6f1;
+            padding:15px;
+            margin-top:30px;
+            border-left:4px solid #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Defence Forces of India</h1>
+        <p>Service Before Self • Honour • Courage</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Army</a>
+        <a href="#">Navy</a>
+        <a href="#">Air Force</a>
+        <a href="#">Careers</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Indian Defence</h1>
+        <p>Pride of the Nation, Guardians of the Land, Sea & Air</p>
+        <button>Explore More</button>
+    </section>
+
+    <div class="facilities">
+        <div class="card">
+            <h3>Indian Army</h3>
+            <p>Protecting the nation’s frontiers on land.</p>
+        </div>
+        <div class="card">
+            <h3>Indian Navy</h3>
+            <p>Safeguarding maritime borders & ocean interests.</p>
+        </div>
+        <div class="card">
+            <h3>Indian Air Force</h3>
+            <p>Ensuring air supremacy with power & precision.</p>
+        </div>
+    </div>
+
+    <div class="lists">
+        <div>
+            <h3>Core Values</h3>
+            <ul>
+                <li>Discipline</li>
+                <li>Loyalty</li>
+                <li>Patriotism</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Code of Honour</h3>
+            <ol>
+                <li>Service Before Self</li>
+                <li>Integrity & Courage</li>
+                <li>Commitment to Nation</li>
+            </ol>
+        </div>
+    </div>
+
+    <h2>Recent Missions</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Operation</th>
+                <th>Year</th>
+                <th>Division</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Operation Vijay</td>
+                <td>1999</td>
+                <td>Army</td>
+            </tr>
+            <tr>
+                <td>Tsunami Relief</td>
+                <td>2004</td>
+                <td>Navy</td>
+            </tr>
+            <tr>
+                <td>Operation Maitri</td>
+                <td>2015</td>
+                <td>Air Force</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Recruitment Form</h2>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter Your Name">
+        
+        <label>Email:</label>
+        <input type="email" placeholder="Enter Your Email">
+        
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        
+        <label>Preferred Division:</label>
+        <select>
+            <option>Army</option>
+            <option>Navy</option>
+            <option>Air Force</option>
+        </select>
+        
+        <label>Why do you want to join?</label>
+        <textarea rows="3"></textarea>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <aside>
+        <h3>Notice Board</h3>
+        <p>Recruitment Rally starting next month. Apply Now!</p>
+    </aside>
+</body>
+</html>
